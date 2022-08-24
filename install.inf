@@ -1,0 +1,30 @@
+[info]
+title=reStructuredText Helper
+desc=Gives commands to make reST header underline of needed levels
+type=cudatext-plugin
+subdir=cuda_rest_helper
+homepage=(Fill the GitHub repo URL)
+
+[item11]
+section=commands
+caption=reStructuredText Helper\Underline header level 1
+method=under1
+lexers=reStructuredText
+
+[item12]
+section=commands
+caption=reStructuredText Helper\Underline header level 2
+method=under2
+lexers=reStructuredText
+
+[item13]
+section=commands
+caption=reStructuredText Helper\Underline header level 3
+method=under3
+lexers=reStructuredText
+
+[item14]
+section=commands
+caption=reStructuredText Helper\Underline header level 4
+method=under4
+lexers=reStructuredText
