@@ -1,9 +1,9 @@
 [info]
 title=reStructuredText Helper
-desc=Gives commands to make reST header underline of needed levels
+desc=Gives commands to make reStructuredText header underlines
 type=cudatext-plugin
 subdir=cuda_rest_helper
-homepage=(Fill the GitHub repo URL)
+homepage=https://github.com/CudaText-addons/cuda_rest_helper
 
 [item11]
 section=commands
