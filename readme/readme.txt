@@ -6,7 +6,7 @@ possible header-chars).
 2: call one of N plugin commands in menu "Plugins / reStructuredText Helper",
 it will underline current line with header-chars of proper level.
 
-possible header chars by default: =-~" (4 levels).
+possible header chars by default: =-~"^# (predefined for 6 levels).
 but this can be changed in plugin config-file: plugins.ini, section [rest_helper].
 open config file by menu item: "Options / Settings-plugins / ..."
 
