@@ -28,3 +28,21 @@ section=commands
 caption=reStructuredText Helper\Underline header level 4
 method=under4
 lexers=reStructuredText
+
+[item15]
+section=commands
+caption=reStructuredText Helper\Underline header level 5
+method=under5
+lexers=reStructuredText
+
+[item16]
+section=commands
+caption=reStructuredText Helper\Underline header level 6
+method=under6
+lexers=reStructuredText
+
+[item50]
+section=commands
+caption=reStructuredText Helper\Config
+method=config
+menu=o

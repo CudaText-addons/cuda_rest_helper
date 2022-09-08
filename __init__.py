@@ -7,7 +7,7 @@ _   = get_translation(__file__)  # I18N
 fn_config = os.path.join(app_path(APP_DIR_SETTINGS), 'plugins.ini')
 
 option_section = 'rest_helper'
-option_headers = '=-~"'
+option_headers = '=-~"^#'
 
 def is_underline(s):
     for ch in option_headers:
@@ -66,3 +66,7 @@ class Command:
         self.header(3)
     def under4(self):
         self.header(4)
+    def under5(self):
+        self.header(5)
+    def under6(self):
+        self.header(6)
