@@ -16,10 +16,10 @@ def is_underline(s):
     return False
 
 def cjk_len(txt):
-   lenTxt = len(txt)
-   lenTxt_utf8 = len(txt.encode('utf-8'))
-   rst_len = int((lenTxt_utf8 - lenTxt) / 2 + lenTxt) 
-   return rst_len
+    lenTxt = len(txt)
+    lenTxt_utf8 = len(txt.encode('utf-8'))
+    rst_len = int((lenTxt_utf8 - lenTxt) / 2 + lenTxt) 
+    return rst_len
 
 class Command:
 
