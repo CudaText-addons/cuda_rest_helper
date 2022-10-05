@@ -7,7 +7,7 @@ _   = get_translation(__file__)  # I18N
 fn_config = os.path.join(app_path(APP_DIR_SETTINGS), 'plugins.ini')
 
 option_section = 'rest_helper'
-option_headers = '=-~"^#'
+option_headers = '=-~^"\''
 
 def is_underline(s):
     for ch in option_headers:
@@ -15,6 +15,11 @@ def is_underline(s):
             return True
     return False
 
+def cjk_len(txt):
+   lenTxt = len(txt)
+   lenTxt_utf8 = len(txt.encode('utf-8'))
+   rst_len = int((lenTxt_utf8 - lenTxt) / 2 + lenTxt) 
+   return rst_len
 
 class Command:
 
@@ -55,7 +60,7 @@ class Command:
         if level>=len(option_headers):
             return msg_status(_('Header level %d is not specified in config')%(level+1))
 
-        newline = option_headers[level]*len(line1)
+        newline = option_headers[level]*cjk_len(line1)
         ed.insert(0, y+1, newline+'\n')
 
     def under1(self):
