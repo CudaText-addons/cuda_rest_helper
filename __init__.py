@@ -16,8 +16,9 @@ def is_underline(s):
     return False
 
 def unicode_len(s):
-    v = len(s.encode('utf-16'))
-    return v//2 - 1
+    return len(s)
+    #v = len(s.encode('utf-16'))
+    #return v//2 - 1
 
 
 class Command:
